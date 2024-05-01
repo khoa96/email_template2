@@ -44,7 +44,7 @@
   </style>
   <style type="text/css">
     body {
-      font-family: "Circular Std Medium";
+      font-family: "Circular Std Medium", Arial, Helvetica, san-serif;
       background-color: #f5f7f9;
     }
 
@@ -75,10 +75,11 @@
 
     .email-title {
       margin-top: 20px;
-      font-family: "Circular Std Bold";
+      font-family: "Circular Std Bold", Arial, Helvetica, san-serif;
       font-size: 32px;
       font-style: normal;
       font-weight: 400;
+      color: #1A202C !important;
       line-height: normal;
       text-transform: capitalize;
     }
@@ -87,7 +88,7 @@
       width: 100%;
       max-width: 480px;
       height: auto;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       margin: auto;
       color: #000;
       font-size: 16px;
@@ -114,7 +115,7 @@
       background-color: rgba(41, 113, 240, 0.05);
       padding: 18px 20px;
       margin-bottom: 8px;
-      ;
+      display: flex !important;
     }
 
     .block-item:last-child {
@@ -134,10 +135,13 @@
       position: relative;
       top: 2px;
     }
+    .block-item .left-content .icon-wrapper img {
+        vertical-align: middle;
+    }
 
     .block-item .left-content .label {
       color: #000;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -152,10 +156,9 @@
       width: 70%;
       display: inline-block;
       text-align: right;
-      margin-right: -5px;
       color: #000;
       text-align: right;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
@@ -181,7 +184,7 @@
     .block-item .right-content .text-link {
       color: var(--blue, #2971F0);
       text-align: right;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
@@ -222,7 +225,7 @@
       border-radius: 8px;
       background-color:  #2971F0;
       color: #FFF;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -235,7 +238,7 @@
 
      .list-step .step-item .step-content {
         color: #000;
-        font-family: "Circular Std Thin";
+        font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -248,7 +251,7 @@
      }
      .list-step .step-item .step-link {
       color:  #2971F0;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -265,7 +268,7 @@
       background: var(--Orange, #FF6D03);
       color: #FFF;
       text-align: center;
-      font-family: "Circular Std Medium";
+      font-family: "Circular Std Medium", Arial, Helvetica, san-serif;
       font-size: 17px;
       font-style: normal;
       font-weight: 400;
@@ -278,7 +281,7 @@
 <body>
   <div class="template-email-wrapper">
     <div class="template-email__header">
-      <img src="https://i.postimg.cc/xCnLYB5c/Frame-62.png"  class="bitu-image" alt="" width="113" height="40" style="object-fit: cover;"/>
+       <img src="https://i.postimg.cc/xCnLYB5c/Frame-62.png"  class="bitu-image" alt="" width="113" height="40" style="object-fit: cover;"/>
       <h1 class="email-title">
         <span class="highlight">Linn,</span> Don’t forget! You have a trial <br /> lesson on Bitu
       </h1>
@@ -293,40 +296,7 @@
       <div class="block-item">
         <div class="left-content">
           <span class="icon-wrapper">
-            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="20" height="22" fill="#E5E5E5" />
-              <g id="Template Reminder Global">
-                <path
-                  d="M-863 -591C-863 -592.105 -862.105 -593 -861 -593H1606C1607.1 -593 1608 -592.105 1608 -591V1404C1608 1405.1 1607.1 1406 1606 1406H-861C-862.105 1406 -863 1405.1 -863 1404V-591Z"
-                  fill="#DAD4CD" />
-                <path
-                  d="M-861 -592H1606V-594H-861V-592ZM1607 -591V1404H1609V-591H1607ZM1606 1405H-861V1407H1606V1405ZM-862 1404V-591H-864V1404H-862ZM-861 1405C-861.552 1405 -862 1404.55 -862 1404H-864C-864 1405.66 -862.657 1407 -861 1407V1405ZM1607 1404C1607 1404.55 1606.55 1405 1606 1405V1407C1607.66 1407 1609 1405.66 1609 1404H1607ZM1606 -592C1606.55 -592 1607 -591.552 1607 -591H1609C1609 -592.657 1607.66 -594 1606 -594V-592ZM-861 -594C-862.657 -594 -864 -592.657 -864 -591H-862C-862 -591.552 -861.552 -592 -861 -592V-594Z"
-                  fill="black" fill-opacity="0.1" />
-                <g
-                  id="User &#196;&#145;&#195;&#163; mua bu&#225;&#187;&#149;i h&#225;&#187;&#141;c th&#225;&#187;&#173; nh&#198;&#176;ng ch&#198;&#176;a &#196;&#145;&#225;&#186;&#183;t l&#225;&#187;&#139;ch h&#225;&#187;&#141;c bu&#225;&#187;&#149;i trial">
-                  <rect width="668" height="1141" transform="translate(-56 -352)" fill="white" />
-                  <path id="Rectangle 2467" d="M-22 -325H578V379H-22V-325Z" fill="white" />
-                  <g id="Group 9312">
-                    <rect id="Rectangle 2471" opacity="0.05" x="-22" y="-19" width="600" height="60" rx="24"
-                      fill="#2971F0" />
-                    <g id="file-01">
-                      <g id="elements">
-                        <path id="Rectangle 2172"
-                          d="M1.5 9C1.5 5.22876 1.5 3.34315 2.7448 2.17157C3.98959 1 5.99306 1 10 1H10.7727C14.0339 1 15.6645 1 16.7969 1.79784C17.1214 2.02643 17.4094 2.29752 17.6523 2.60289C18.5 3.66867 18.5 5.20336 18.5 8.27273V10.8182C18.5 13.7814 18.5 15.2629 18.0311 16.4462C17.2772 18.3486 15.6829 19.8491 13.6616 20.5586C12.4044 21 10.8302 21 7.68182 21C5.88275 21 4.98322 21 4.26478 20.7478C3.10979 20.3424 2.19875 19.4849 1.76796 18.3979C1.5 17.7217 1.5 16.8751 1.5 15.1818V9Z"
-                          stroke="#FF6D03" stroke-width="1.5" stroke-linejoin="round" />
-                        <path id="Vector"
-                          d="M18.5 11C18.5 12.8409 17.0076 14.3333 15.1667 14.3333C14.5009 14.3333 13.716 14.2167 13.0686 14.3901C12.4935 14.5442 12.0442 14.9935 11.8901 15.5686C11.7167 16.216 11.8333 17.0009 11.8333 17.6667C11.8333 19.5076 10.3409 21 8.5 21"
-                          stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path id="Vector 4381" d="M6 6H13" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path id="Vector 4382" d="M6 10H9" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
+           <img src="https://i.postimg.cc/XvQ1RKcS/file-01.png" width="24" height="24" />
           </span>
           <span class="label">Course name</span>
         </div>
@@ -340,16 +310,7 @@
       <div class="block-item">
         <div class="left-content">
           <span class="icon-wrapper">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 12H15M7 12H7.00898M12 16H7M15 16H14.991" stroke="#FF6D03" stroke-width="1.5"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M17 1V3M5 1V3" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M1.5 11.2432C1.5 6.88594 1.5 4.70728 2.75212 3.35364C4.00424 2 6.01949 2 10.05 2H11.95C15.9805 2 17.9958 2 19.2479 3.35364C20.5 4.70728 20.5 6.88594 20.5 11.2432V11.7568C20.5 16.1141 20.5 18.2927 19.2479 19.6464C17.9958 21 15.9805 21 11.95 21H10.05C6.01949 21 4.00424 21 2.75212 19.6464C1.5 18.2927 1.5 16.1141 1.5 11.7568V11.2432Z"
-                stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M2 7H20" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+           <img src="https://i.postimg.cc/Ls92kT6r/calendar-02.png"  width="24" height="24"/>
           </span>
           <span class="label">Expiration date</span>
         </div>
@@ -364,40 +325,22 @@
         <div class="left-content">
           <span class="icon-wrapper">
 
-            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4.57757 14.4816C3.1628 15.324 -0.546635 17.0441 1.71266 19.1966C2.81631 20.248 4.04549 21 5.59087 21H14.4091C15.9545 21 17.1837 20.248 18.2873 19.1966C20.5466 17.0441 16.8372 15.324 15.4224 14.4816C12.1048 12.5061 7.89519 12.5061 4.57757 14.4816Z"
-                stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M14.5 5.5C14.5 7.98528 12.4853 10 10 10C7.51472 10 5.5 7.98528 5.5 5.5C5.5 3.01472 7.51472 1 10 1C12.4853 1 14.5 3.01472 14.5 5.5Z"
-                stroke="#FF6D03" stroke-width="1.5" />
-            </svg>
+           <img src="https://i.postimg.cc/4N2S2Q5D/user-1.png" width="24" height="24" />
 
           </span>
           <span class="label">Your account</span>
         </div>
-        <div class="right-content">
-          halinhbitu@gmail.com
+        <div class="right-content" style="color: #000; text-decoration: none">
+          <span  style="color: #000 !important; text-decoration: none !important">halinhbitu@gmail.com</span>
         </div>
       </div>
       <!-- ========= Your account ===== -->
 
       <!-- ========= Teacher ===== -->
       <div class="block-item">
-        <div class="left-content">
+        <div class="left-content" style="line-height: 42px">
           <span class="icon-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-              <path d="M12 13C9.70833 19 3.29167 13 1 19" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M14.5 13H16.0013C18.3583 13 19.5368 13 20.2691 12.2678C21.0013 11.5355 21.0013 10.357 21.0013 8V6C21.0013 3.64298 21.0013 2.46447 20.2691 1.73223C19.5368 1 18.3583 1 16.0013 1H12.0013C9.64428 1 8.46576 1 7.73353 1.73223C7.11312 2.35264 7.01838 3.29344 7.00391 5"
-                stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <circle cx="6.5" cy="10.5" r="2.5" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M11 5H17M17 9H14" stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-
+           <img src="https://i.postimg.cc/RhB3wYqw/teaching.png" width="24" height="24" />
           </span>
           <span class="label">Teacher</span>
         </div>
@@ -413,14 +356,7 @@
       <div class="block-item">
         <div class="left-content">
           <span class="icon-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path
-                d="M9.10023 1C5.45057 1.00657 3.53942 1.09617 2.31806 2.31754C1 3.63559 1 5.75698 1 9.99974C0.999999 14.2425 0.999999 16.3639 2.31806 17.6819C3.63611 19 5.7575 19 10.0003 19C14.243 19 16.3644 19 17.6825 17.6819C18.9038 16.4606 18.9934 14.5494 19 10.8998"
-                stroke="#FF6D03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M19.0705 2.03235C19.3645 1.74058 19.3663 1.26571 19.0745 0.971698C18.7827 0.677689 18.3079 0.675876 18.0139 0.967649L19.0705 2.03235ZM12.4717 6.46765C12.1777 6.75942 12.1759 7.23429 12.4676 7.5283C12.7594 7.82231 13.2343 7.82412 13.5283 7.53235L12.4717 6.46765ZM18.0285 1.22706L17.8977 1.96557L18.0285 1.22706ZM13.9999 0.25C13.5857 0.250036 13.25 0.585852 13.25 1.00007C13.25 1.41428 13.5859 1.75004 14.0001 1.75L13.9999 0.25ZM18.25 6C18.25 6.41421 18.5858 6.75 19 6.75C19.4142 6.75 19.75 6.41421 19.75 6H18.25ZM18.7729 1.97175L19.5115 1.84109V1.84109L18.7729 1.97175ZM18.0139 0.967649L12.4717 6.46765L13.5283 7.53235L19.0705 2.03235L18.0139 0.967649ZM18.1593 0.488554C17.4584 0.364429 16.4015 0.30696 15.558 0.278713C15.1282 0.26432 14.7396 0.257151 14.4585 0.253575C14.3178 0.251785 14.2038 0.250892 14.1247 0.250446C14.0851 0.250222 14.0542 0.250111 14.0331 0.250055C14.0225 0.250028 14.0144 0.250014 14.0088 0.250007C14.0061 0.250003 14.0039 0.250002 14.0024 0.250001C14.0017 0.25 14.0011 0.25 14.0007 0.25C14.0005 0.25 14.0003 0.25 14.0002 0.25C14.0001 0.25 14.0001 0.25 14 0.25C14 0.25 13.9999 0.25 14 1C14.0001 1.75 14 1.75 14 1.75C14 1.75 14 1.75 14.0001 1.75C14.0001 1.75 14.0002 1.75 14.0003 1.75C14.0006 1.75 14.001 1.75 14.0016 1.75C14.0027 1.75 14.0045 1.75 14.007 1.75001C14.0119 1.75001 14.0193 1.75002 14.0292 1.75005C14.0489 1.7501 14.0782 1.75021 14.1162 1.75042C14.1922 1.75085 14.3027 1.75171 14.4394 1.75345C14.7131 1.75694 15.091 1.76391 15.5078 1.77787C16.3577 1.80633 17.3151 1.86239 17.8977 1.96557L18.1593 0.488554ZM19 6C19.75 6 19.75 5.99996 19.75 5.99991C19.75 5.99988 19.75 5.99981 19.75 5.99975C19.75 5.99963 19.75 5.99946 19.75 5.99926C19.75 5.99884 19.75 5.99826 19.75 5.99752C19.75 5.99603 19.75 5.99388 19.75 5.99109C19.75 5.98552 19.75 5.97739 19.7499 5.96682C19.7499 5.9457 19.7498 5.91483 19.7495 5.87526C19.7491 5.79614 19.7482 5.68213 19.7464 5.54148C19.7428 5.2604 19.7356 4.87182 19.7212 4.44203C19.6929 3.59857 19.6355 2.54186 19.5115 1.84109L18.0344 2.1024C18.1375 2.68506 18.1936 3.64247 18.222 4.49229C18.236 4.90913 18.243 5.28697 18.2465 5.56066C18.2483 5.69739 18.2491 5.80784 18.2496 5.88384C18.2498 5.92183 18.2499 5.95119 18.2499 5.9709C18.25 5.98075 18.25 5.98819 18.25 5.99308C18.25 5.99553 18.25 5.99734 18.25 5.9985C18.25 5.99908 18.25 5.99949 18.25 5.99974C18.25 5.99987 18.25 5.99995 18.25 6C18.25 6.00002 18.25 6.00002 18.25 6.00003C18.25 6.00002 18.25 6 19 6ZM17.8977 1.96557C17.9482 1.97451 17.9756 1.99342 17.9911 2.00886C18.0065 2.02432 18.0255 2.05182 18.0344 2.1024L19.5115 1.84109C19.3874 1.13972 18.8609 0.612803 18.1593 0.488554L17.8977 1.96557Z"
-                fill="#FF6D03" />
-            </svg>
+             <img src="https://i.postimg.cc/bJ88gfHY/link-square-01.png" width="24" height="24" />
           </span>
           <span class="label"> Link to join </span>
         </div>
